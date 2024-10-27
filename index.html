@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Project</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #8acee5, #a3e8f5);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #333;
+        }
+        h1 {
+            color: #4b4949;
+            margin-bottom: 150px; /* زيادة المسافة أسفل العنوان */
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px #888;
+        }
+        h2 {
+            color: #4b4848;
+            line-height: 2;
+            text-align: justify;
+            max-width: 800px;
+            margin: 50px auto; /* زيادة المسافة حول النص */
+            padding: 10px;
+        }
+        .spaced-text {
+            margin-bottom: 500px; /* مسافة أكبر بين الأقسام */
+        }
+        .button {
+            background: linear-gradient(90deg, #007BFF, #0056b3);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-size: 1em;
+        }
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 50px; /* تقليل المسافة بين النص والأزرار */
+        }
+    </style>
+    <script>
+        function scrollToElement(elementId) {
+            var element = document.getElementById(elementId);
+            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    </script>
+</head>
+<body>
+    <h1>من جد وجد</h1>
+    <div id="section1" class="spaced-text">
+        <h2>
+            يُحكى أن هناك شابًا فقيرًا كان يعيش في قرية صغيرة. هذا الشاب كان يحلم بأن يصبح طبيبًا ناجحًا، لكنه لم يكن يملك المال الكافي للدراسة. بدأ الشاب يعمل بجد في مزارع القرية وكسب بعض المال. استخدم هذا المال لشراء الكتب والدراسة بمفرده في أوقات فراغه. كانت الصعوبات تواجهه من كل جانب، لكنه لم يتراجع. كان يدرس بجد كل ليلة، ولا يستسلم أبدًا.
+        </h2>
+        <div class="button-container">
+            <button class="button" onclick="scrollToElement('section2')">التالي</button>
+        </div>
+    </div>
+    <div id="section2" class="spaced-text">
+        <h2>
+            بعد سنوات من العمل الشاق والتفاني، تمكن الشاب من الحصول على منحة للدراسة في الجامعة. تابع مسيرته الأكاديمية بجد وإصرار حتى تخرج بامتياز وأصبح طبيبًا مشهورًا. عاد إلى قريته ليساعد أهلها ويقدم لهم الرعاية الطبية المجانية.
+        </h2>
+        <div class="button-container">
+            <button class="button" onclick="scrollToElement('section1')">السابق</button>
+            <button class="button" onclick="scrollToElement('section3')">التالي</button>
+        </div>
+    </div>
+    <div id="section3" class="spaced-text">
+        <h2>
+            الحكمة من هذا المثال هي أن العمل الجاد والإصرار يمكن أن يحققان الأحلام، مهما كانت الصعوبات. إنه يعلّمنا أن النجاح لا يأتي إلا لمن يعمل بجد ويبذل الجهد اللازم.
+        </h2>
+        <div class="button-container">
+            <button class="button" onclick="scrollToElement('section2')">السابق</button>
+            <button class="button" onclick="scrollToElement('section4')">التالي</button>
+        </div>
+    </div>
+    <div id="section4" class="spaced-text">
+        <h2>
+            فيجب ان نتحلى ب الاجتهاد، الصبر، العمل الجاد، الإصرار، المثابرة، الطموح، العزيمة، التفاني، الأمل.
+        </h2>
+        <div class="button-container">
+            <button class="button" onclick="scrollToElement('section3')">السابق</button>
+        </div>
+    </div>
+</body>
+</html>
